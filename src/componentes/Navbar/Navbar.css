@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar .content-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    padding: 1.5rem 0;
+}
+
+.navbar .content-navbar .items-navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.navbar .content-navbar .items-navbar ul .shopping-cart {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}

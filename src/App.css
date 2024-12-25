@@ -1,0 +1,34 @@
+.app .app-header {
+    background-image: url('/public/imagens/img-bg-header.png');
+    background-repeat: no-repeat;
+    width: auto;
+    height: 975px;
+    background-position-x: right;
+    background-position-y: top;
+}
+
+.app .app-header .text-header {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 6rem auto;
+}
+
+.app .app-header .text-header h1 {
+    font-family: 'Elsie Swash Caps';
+    font-weight: 900;
+    font-size: 62px;
+    width: 30%;
+}
+
+.app .app-header .text-header p {
+    width: 30%;
+    opacity: .5;
+    font-size: 22px;
+}
+
+.app .app-header .text-header .little-text {
+    font-size: 16px;
+}
+
