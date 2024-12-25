@@ -1,10 +1,14 @@
 .app .app-header {
-    background-image: url('/public/imagens/img-bg-header.png');
-    background-repeat: no-repeat;
-    width: auto;
-    height: 975px;
-    background-position-x: right;
-    background-position-y: top;
+    padding: 0 1rem;
+}
+
+@media (min-width: 920px) {
+    .app .app-header {
+        background-image: url('/public/imagens/img-1-header.png'), url('/public/imagens/img-bg-header.png');
+        height: 975px;
+        background-repeat: no-repeat;
+        background-position: right top;
+    }   
 }
 
 .app .app-header .text-header {
@@ -18,12 +22,12 @@
 .app .app-header .text-header h1 {
     font-family: 'Elsie Swash Caps';
     font-weight: 900;
-    font-size: 62px;
-    width: 30%;
+    font-size: 82px;
+    width: 40%;
 }
 
 .app .app-header .text-header p {
-    width: 30%;
+    width: 40%;
     opacity: .5;
     font-size: 22px;
 }
