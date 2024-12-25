@@ -7,7 +7,7 @@ const Navbar = () => {
     <navbar className="navbar">
         <div className="content-navbar">
             <div className="logo">
-                <img src="imagens/logo.png" width="120" alt="Logo Casa Verde Com uma folha verde à esquerda e o texto à direita" />
+                <img src="imagens/logo.png" width="150" alt="Logo Casa Verde Com uma folha verde à esquerda e o texto à direita" />
             </div>
             <div className="items-navbar">
                 <ul>
