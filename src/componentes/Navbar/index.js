@@ -43,7 +43,7 @@ const Navbar = () => {
         },
         {
             id: uuidv4(),
-            item: 'Meus Carrinho',
+            item: 'Meu Carrinho',
         }
     ]
 
