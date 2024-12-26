@@ -8,7 +8,7 @@ const StyleApp = styled.div `
     padding: 0 1rem;
   }
 
-  @media (min-width: 960px) {
+  @media (min-width: 1050px) {
       .app-header {
           background-image: url('/public/imagens/img-1-header.png'), url('/public/imagens/img-bg-header.png');
           height: 975px;
@@ -16,7 +16,7 @@ const StyleApp = styled.div `
           background-position: right top;
       }   
   }
-  @media (max-width: 959px) {
+  @media (max-width: 1049px) {
       .app-header {
           padding: 0;
           height: auto;

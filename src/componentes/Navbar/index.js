@@ -14,7 +14,7 @@ const StyleNavbar = styled.div `
         padding: 1.5rem 0;
     }
 
-    @media (max-width: 959px) {
+    @media (max-width: 1040px) {
         .content-navbar {
             flex-direction: column;
             gap: 30px;
