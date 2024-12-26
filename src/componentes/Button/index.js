@@ -14,9 +14,10 @@ const Btn = styled.button`
                 }
             `
 
-const Button = ({textButton, colorButton, bgButton, hoverBgButton, hoverColorButton}) => {
+const Button = ({onClick, textButton, colorButton, bgButton, hoverBgButton, hoverColorButton}) => {
     return(
-        <Btn 
+        <Btn
+            onClick={onClick}
             bgButton={bgButton} 
             colorButton={colorButton}
             hoverColorButton={hoverColorButton}
