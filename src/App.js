@@ -2,6 +2,8 @@ import styled, { ThemeProvider } from 'styled-components';
 import theme from './theme';
 import Navbar from "./componentes/Navbar";
 import Newsletter from "./componentes/Newsletter";
+import { GlobalStyle } from './GlobalStyle';
+
 
 const StyleApp = styled.div `
   .app-header {
@@ -79,6 +81,7 @@ function App() {
           </div>
         </header>
       </StyleApp>
+      <GlobalStyle />
     </ThemeProvider>
   );
 }
