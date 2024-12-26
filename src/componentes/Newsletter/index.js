@@ -26,6 +26,45 @@ const StyleNewsLetter = styled.div `
         padding-left: 1.5rem;
         color: #AAA;
     }
+
+    @media (max-width: 616px) {
+        .form-newsletter {
+            width: 80%;
+        }
+        .form-newsletter .items-newsletter {
+            width: 50%;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+        .items-newsletter button {
+            width: 100% !important;
+        }
+        .items-newsletter input {
+            width: 80% !important;
+        }
+        .items-newsletter svg {
+            width: 30px !important;
+            margin: 0 0 0 1rem;
+        }
+    }
+
+    @media (max-width: 499px) {
+        .form-newsletter .items-newsletter {
+            max-width: 50%;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+        .items-newsletter button {
+            width: 100% !important;
+        }
+        .items-newsletter input {
+            width: 80% !important;
+        }
+        .items-newsletter svg {
+            width: 30px !important;
+            margin: 0 0 0 1rem;
+        }
+    }
 `
 
 const Newsletter = () => {   

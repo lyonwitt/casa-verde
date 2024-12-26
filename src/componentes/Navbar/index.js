@@ -56,9 +56,7 @@ const Navbar = () => {
             <div className="logo">
                 <img src="imagens/logo.png" width="150" alt="Logo Casa Verde Com uma folha verde à esquerda e o texto à direita" />
             </div>
-            <div className="items-navbar">
-                <ItensNavBar itensNavbar={itensNavbar}/>
-            </div>
+            <ItensNavBar itensNavbar={itensNavbar}/>
         </div>
     </StyleNavbar>
 

@@ -10,12 +10,13 @@ const StyleApp = styled.div `
 
   @media (min-width: 1050px) {
       .app-header {
-          background-image: url('/public/imagens/img-1-header.png'), url('/public/imagens/img-bg-header.png');
+          background-image: url('/imagens/img-1-header.png'), url('/imagens/img-bg-header.png');
           height: 975px;
           background-repeat: no-repeat;
           background-position: right top;
       }   
   }
+  
   @media (max-width: 1049px) {
       .app-header {
           padding: 0;
@@ -25,7 +26,11 @@ const StyleApp = styled.div `
           background:${props => props.theme.colors.lightyellow};
           padding: 1rem;
           margin: 3rem auto !important;
-      }   
+      } 
+      
+      .app-header .text-header h1 {
+        font-size: 62px !important;
+      }
   }
 
   .app-header .text-header {
