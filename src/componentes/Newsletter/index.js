@@ -3,10 +3,11 @@ import Input from '../Input'
 import { useState } from 'react'
 import styled from 'styled-components'
 import { MdOutlineEmail } from "react-icons/md"
-import IconButton from '@mui/material/IconButton'
-import { IoClose } from "react-icons/io5"
 import { Snackbar } from "@mui/material"
 import Alert from '@mui/material/Alert'
+import emailjs from '@emailjs/browser'
+
+console.log(process.env.REACT_APP_SERVICE_ID)
 
 const StyleNewsLetter = styled.div`
     .form-newsletter {
@@ -83,7 +84,7 @@ const Newsletter = () => {
     const[severity, setSeverity] = useState('');
 
     const handleToClose = (event, reason) => {
-        if ("clickaway" == reason) return;
+        if ("clickaway" === reason) return;
         setOpen(false);
     };
     
@@ -99,8 +100,22 @@ const Newsletter = () => {
         if(input !== '') {
             setMessage(`Obrigado pela sua assinatura, você receberá nossas novidades no e-mail: ${input}`)
             setSeverity('success')
-            setOpen(true);
+            setOpen(true)
             setInput('')
+
+            const templateParams = {
+                user_email: input,
+                user_name: 'Casa Verde'
+            }
+
+            emailjs.send("service_3jmamv4", "template_4y7tv27", templateParams, "3fiXlsKPprWoa-8Fm").then(
+                (response) => {
+                  console.log('SUCCESS!', response.status, response.text);
+                },
+                (error) => {
+                  console.log('FAILED...', error);
+                },
+            );
         }
     };
 
