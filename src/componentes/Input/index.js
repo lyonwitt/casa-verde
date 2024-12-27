@@ -1,19 +1,4 @@
-import styled from 'styled-components'
-
-const StyleInput = styled.input `
-    background-color: ${props => props.bgInput || props.theme.colors.light};
-    border: none;
-    padding: 1.5rem;
-    width: 100%;
-
-    &::placeholder {
-        color: ${props => props.colorPlaceHolder || props.theme.colors.lightgray};
-    }
-
-    &:focus {
-        outline: none;
-    }
-`
+import { StyleInput } from "./StyleInput"
 
 const Input = ({typeInput, placeInput, bgInput, colorPlaceHolder, alterValue, valueInput}) => {
     return (
